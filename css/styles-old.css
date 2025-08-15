@@ -1,16 +1,11 @@
-/* 
-         Common
-   ============================ */
-/****** Fonts ******/
+/* Fonts */
 :root {
   --main-font: "Roboto", sans-serif;
   --logo-font: "Raleway", sans-serif;
   --main-font-style: normal;
 }
 
-/* 
-           Collor
-============================ */
+/* Color */
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -26,9 +21,7 @@
   --dairy: #fcfcfc;
 }
 
-/* 
-         Icons color
-============================ */
+/* Icon Color */
 
 .icon-soc {
   fill: var(--cloud);
@@ -41,10 +34,8 @@ body {
   color: var(--slate);
 }
 
-/* 
-       Reset Configurations
-   ============================ */
-
+/* Reset Configurations
+ */
 h1,
 h2,
 h3,
@@ -75,9 +66,7 @@ a {
   display: inline-block;
 }
 
-/* ============================
-         Main Container 
-   ============================ */
+/* Main Container  */
 .page-container {
   display: flex;
   flex-direction: column;
@@ -94,34 +83,26 @@ main {
   margin: 0 auto;
 }
 
-/* 
-       Common Section styles 
-   ============================ */
+/* Common Section Styles */
 
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-/*
-       Header 
-============================*/
-
+/* Header */
 .header-section-block {
   display: flex;
   justify-content: space-between;
 }
 
 .page-header {
-  /* box-sizing: border-box; */
   border-bottom: 1px solid #e7e9fc;
   width: 100%;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
-/* --------
-         Logo Header
-----------*/
+/* Logo Header */
 .logo {
   font-family: var(--logo-font);
   box-sizing: border-box;
@@ -143,9 +124,8 @@ span {
 
 }
 
-/* --------
-         Header Navigation
-----------*/
+/* Header Navigation  */
+
 .header-logo {}
 
 .header-nav {
@@ -200,9 +180,7 @@ span {
 
 .navigation-list {}
 
-/* --------
-         Address
-----------*/
+/* Address */
 
 address {
   font-style: normal;
@@ -229,9 +207,7 @@ address {
   color: var(--ocean);
 }
 
-/* 
-       Section 1  - Hero 
-   ============================ */
+/* Secion 1 Hero */
 
 .hero-section-block {
   height: 600px;
@@ -290,9 +266,7 @@ address {
   background-color: var(--ocean);
 }
 
-/* 
-       Section 2 - Benefits
-   ============================ */
+/* Section 2 Benefits */
 
 .benefits-section {}
 
@@ -335,9 +309,7 @@ address {
   letter-spacing: 0.02em;
 }
 
-/*
-       Icons S2 
----------------*/
+/* Icons Section 2 */
 
 
 .benefits-icon-container {
@@ -353,9 +325,7 @@ address {
 
 }
 
-/* 
-       Section 3 - Team Card
-   ============================ */
+/* Section 3 Team Cards */
 
 .team-section-block {
   background-color: var(--cloud);
@@ -438,9 +408,7 @@ address {
   height: 40px;
 }
 
-/* 
-         Section 4 - Portfolio 
-   ============================ */
+/* Section 4 - Portfolio */
 
 .portfolio-title {
   font-weight: 700;
@@ -501,14 +469,6 @@ address {
 
 }
 
-/* .thumb p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--cloud);
-} */
-
 .portfolio-block {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -531,9 +491,7 @@ address {
   letter-spacing: 0.02em;
 }
 
-/* 
-       Footer 
-   ============================ */
+/* Footer */
 
 .footer-section {
   background-color: var(--navy-blue);
@@ -562,11 +520,6 @@ address {
   align-items: baseline;
 }
 
-.footer-soc {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-}
 
 .footer-soc-title {
   font-weight: 500;
@@ -598,17 +551,13 @@ address {
   margin-right: 80px;
 }
 
-/* --------
-         footer Logo
-----------*/
+/* Footer - Logo */
 .footer-logo {
   color: var(--cloud);
 }
 
 
-/*
-      Footer Subscribe - input 
----------------*/
+/* Footer - Subscribe Form */
 
 .scr-form-block {}
 
@@ -690,9 +639,7 @@ address {
 }
 
 
-/* 
-        Modal 
-============================ */
+/* Popup Menu */
 
 
 .modal-overlay {
@@ -742,9 +689,7 @@ address {
   overflow-y: auto;
 }
 
-/*
-    X   Close Button
----------------*/
+/* Close Button X */
 
 .close-btn {
   position: absolute;
@@ -781,9 +726,7 @@ address {
 
 
 
-/*
-      Overlay Title
----------------*/
+/* Overlay - Title */
 
 .overlay-title {
   font-weight: 500;
@@ -799,9 +742,7 @@ address {
 
 
 
-/*
-      Inputs Name Phone Email 
----------------*/
+/* Form - Name - Phone - Email */
 
 .label-block {
   margin-bottom: 8px;
@@ -859,24 +800,12 @@ address {
 }
 
 
-/*
-      User Comment 
----------------*/
+/* User Comment */
 
 .comment-block {
   margin-bottom: 16px;
 
 }
-
-/* .user-comment {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--light-slate);
-  display: block;
-  margin-bottom: 4px;
-} */
 
 .text-comment {
   width: 100%;
@@ -910,11 +839,7 @@ address {
   border-color: var(--iris);
 }
 
-
-
-/*
-      Checkbox 
----------------*/
+/* Checkbox */
 
 .checkbox-field {
   margin-bottom: 24px;
@@ -924,10 +849,11 @@ address {
 
 .custom-checkbox {
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
@@ -949,6 +875,7 @@ address {
 .custom-checkbox-icon {}
 
 .checkbox-label {
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
