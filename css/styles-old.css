@@ -1,3 +1,4 @@
+/* #region Common Styles */
 /* Fonts */
 :root {
   --main-font: "Roboto", sans-serif;
@@ -34,8 +35,10 @@ body {
   color: var(--slate);
 }
 
-/* Reset Configurations
- */
+
+/* #endregion */
+
+/* #region Reset Configurations */
 h1,
 h2,
 h3,
@@ -66,7 +69,10 @@ a {
   display: inline-block;
 }
 
-/* Main Container  */
+
+/* #endregion */
+
+/* #region Main Container */
 .page-container {
   display: flex;
   flex-direction: column;
@@ -83,14 +89,17 @@ main {
   margin: 0 auto;
 }
 
-/* Common Section Styles */
+/* #endregion */
 
+/* #region Section Style  */
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-/* Header */
+/* #endregion */
+
+/* #region Header */
 .header-section-block {
   display: flex;
   justify-content: space-between;
@@ -207,8 +216,9 @@ address {
   color: var(--ocean);
 }
 
-/* Secion 1 Hero */
+/* #endregion */
 
+/* #region Section 1  - Hero */
 .hero-section-block {
   height: 600px;
   max-width: 1440px;
@@ -266,8 +276,9 @@ address {
   background-color: var(--ocean);
 }
 
-/* Section 2 Benefits */
+/* #endregion */
 
+/* #region Section 2 - Benefits */
 .benefits-section {}
 
 .visually-hidden {
@@ -325,8 +336,9 @@ address {
 
 }
 
-/* Section 3 Team Cards */
+/* #endregion */
 
+/* #region Section 3 - Team cards */
 .team-section-block {
   background-color: var(--cloud);
 }
@@ -408,8 +420,9 @@ address {
   height: 40px;
 }
 
-/* Section 4 - Portfolio */
+/* #endregion */
 
+/* #region Section 4 - Portfolio */
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -491,7 +504,9 @@ address {
   letter-spacing: 0.02em;
 }
 
-/* Footer */
+/* #endregion */
+
+/* #region Footer */
 
 .footer-section {
   background-color: var(--navy-blue);
@@ -519,7 +534,6 @@ address {
   display: flex;
   align-items: baseline;
 }
-
 
 .footer-soc-title {
   font-weight: 500;
@@ -556,11 +570,9 @@ address {
   color: var(--cloud);
 }
 
-
 /* Footer - Subscribe Form */
 
 .scr-form-block {}
-
 
 .subscribe-form {
   display: flex;
@@ -595,8 +607,6 @@ address {
   line-height: 2.0;
   letter-spacing: 0.04em;
   color: var(--white);
-
-
 }
 
 .scr-input::placeholder {
@@ -606,7 +616,6 @@ address {
   line-height: 2.0;
   letter-spacing: 0.04em;
   color: var(--white);
-
 }
 
 .scr-btn {
@@ -625,23 +634,17 @@ address {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.04em;
-
   cursor: pointer;
-
-
-
 }
 
 .btn-scr-icon {
-
   fill: var(--white);
   margin-left: 16px;
 }
 
+/* #endregion */
 
-/* Popup Menu */
-
-
+/* #region Popup Menu (Modal Window) */
 .modal-overlay {
   background-color: rgba(46, 47, 66, 0.4);
 
@@ -925,3 +928,5 @@ address {
 .send-btn:focus {
   background-color: var(--ocean);
 }
+
+/* #endregion */
