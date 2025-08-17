@@ -1,0 +1,185 @@
+/* #region - Тимчасовий Клас */
+
+.hidden {
+    display: none;
+}
+
+/* #endregion */
+
+/* #region - Common Styles */
+/* Fonts */
+:root {
+    --main-font: "Roboto", sans-serif;
+    --logo-font: "Raleway", sans-serif;
+    --main-font-style: normal;
+}
+
+/* Color */
+:root {
+    --iris: #4d5ae5;
+    --ocean: #404bbf;
+    --navy-blue: rgb(46, 47, 66);
+    --green: #31d0aa;
+    --slate: #434455;
+    --light-slate: #8e8f99;
+    --cornflower: #e7e9fc;
+    --cloud: #f4f4fd;
+    --navy-blue-modal: #2e2f42;
+    --grey: #2e2f42;
+    --white: #ffffff;
+    --dairy: #fcfcfc;
+}
+
+/* Icon Color */
+.icon-soc {
+    fill: var(--cloud);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--white);
+    color: var(--slate);
+}
+
+
+/* #endregion */
+
+/* #region - Reset Configurations */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* #endregion */
+
+/* #region - Section Style */
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* #endregion */
+
+/* #region - Main Container */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 320px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 760px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+}
+
+/* #endregion */
+
+/* #region Header */
+
+.page-header {
+    border-bottom: 1px solid var(--cornflower);
+    width: 100%;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+.header-section-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.address,
+.header-nav-list {
+    display: none;
+}
+
+.burger-btn {}
+
+.burger-icon {}
+
+/* logo */
+
+.logo {
+    font-family: var(--logo-font);
+    box-sizing: border-box;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--iris);
+}
+
+span {
+    color: var(--navy-blue);
+}
+
+.logo-header {
+    display: block;
+    padding: 16px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .logo-header {
+        padding: 24px 0;
+        margin-right: 120px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .logo-header {
+        margin-right: 76px;
+    }
+}
+
+
+/* #endregion */

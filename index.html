@@ -37,9 +37,8 @@
           <li><a href="" class="header-nav-link">Contacts</a></li>
         </ul>
       </nav>
-
       <!--adress-->
-      <address id="contacts">
+      <address class="address" id="contacts">
         <ul class="header-adress-list">
           <li>
             <a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a>
@@ -49,6 +48,11 @@
           </li>
         </ul>
       </address>
+      <button class="burger-btn" type="button">
+        <svg class="burger-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
     </div>
     <!-- </div> -->
   </header>
@@ -57,7 +61,7 @@
 
   <main>
     <!-- #region Section 1 - Hero Page -->
-    <section class="section hero-section-block">
+    <section class="section hero-section-block hidden">
       <div class="container">
         <h1 class="hero-section-title">Effective Solutions for Your Business</h1>
         <button type="button" class="hero-btn">Order Service</button>
@@ -67,7 +71,7 @@
 
     <!-- #region Section 2 - Benefits -->
 
-    <section class="section" id="studio">
+    <section class="section hidden" id="studio">
       <div class="container">
         <h2 class="visually-hidden">Benefits</h2>
         <ul class="benefits-list">
@@ -119,12 +123,14 @@
     <!-- #endregion -->
 
     <!-- #region Section 3 - Our Team -->
-    <section class="section team-section-block">
+
+    <section class="section team-section-block  hidden">
       <div class="container">
         <h2 class="team-card-title">Our Team</h2>
         <ul class="team-card-list">
           <li class="team-card">
-            <img src="./images/img-team-icon/img-mark-guerrero.jpg" alt="Mark Guerrero" width=264 class="team-image">
+            <img srcset="./images/img-team/team-1-min.jpg 1x, ./images/img-team/team-1@2x-min.jpg x2 "
+              src="./images/img-team/team-1-min.jpg" alt="Mark Guerrero" width=264 class="team-image">
             <div class="team-card-item">
               <h3 class="team-card-name">Mark Guerrero</h3>
               <p class="team-card-role">Product Designer</p>
@@ -163,7 +169,8 @@
             </div>
           </li>
           <li class="team-card">
-            <img src="./images/img-team-icon//img-tom-ford.jpg" alt="Tom Ford" width="264" class="team-image">
+            <img srcset="./images/img-team/team-2-min.jpg 1x, ./images/img-team/team-2@2x-min.jpg x2 "
+              src="./images/img-team/team-2-min.jpg" alt="Tom Ford" width="264" class="team-image">
             <div class="team-card-item">
               <h3 class="team-card-name">Tom Ford</h3>
               <p class="team-card-role">Frontend Developer</p>
@@ -201,7 +208,8 @@
             </div>
           </li>
           <li class="team-card">
-            <img src="./images/img-team-icon//img-camila-garcia.jpg" alt="Camila Garcia" width="264" class="team-image">
+            <img srcset="./images/img-team/team-3-min.jpg 1x, ./images/img-team/team-3@2x-min.jpg x2 "
+              src="./images/img-team/team-3-min.jpg" alt="Camila Garcia" width="264" class="team-image">
             <div class="team-card-item">
               <h3 class="team-card-name">Camila Garcia</h3>
               <p class="team-card-role">Marketing</p>
@@ -239,7 +247,8 @@
             </div>
           </li>
           <li class="team-card">
-            <img src="./images/img-team-icon//img-daniel-wilson.jpg" alt="Daniel Wilson" width="264" class="team-image">
+            <img srcset="./images/img-team/team-4-min.jpg 1x, ./images/img-team/team-4@2x-min.jpg x2 "
+              src="./images/img-team/team-4-min.jpg" alt="Daniel Wilson" width="264" class="team-image">
             <div class="team-card-item">
               <h3 class="team-card-name">Daniel Wilson</h3>
               <p class="team-card-role">UI Designer</p>
@@ -283,14 +292,28 @@
     <!-- #endregion -->
 
     <!-- #region Section 4 - Portfolio -->
-    <section class="section" id="portfolio">
+
+    <section class="section  hidden" id="portfolio">
       <div class="container">
-        <h2 class="portfolio-title">Our Portfolio</h2>
         <!--first row-->
+        <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list">
           <li class="portfolio-card">
             <div class="thumb">
-              <img src="./images/img-porfolio/banking-app.jpg" alt="Banking App" class="portfolio-img" width="360">
+              <picture>
+
+                <source media="(min-width: 1158px)" srcset="./images/img-porfolio/desk-1-min.jpg 1x, 
+                  ./images/img-porfolio/desk-1@2x-min.jpg 2x">
+
+                <source media="(min-width: 768px)" srcset="./images/img-porfolio/tab-1-min.jpg 1x, 
+                  ./images/img-porfolio/tab-1@2x-min.jpg 2x">
+
+                <source media="(max-width: 767px)" srcset="./images/img-porfolio/mob-1-min.jpg 1x, 
+                  ./images/img-porfolio/mob-1@2x-min.jpg 2x">
+
+                <img src="./images/img-porfolio/desk-1-min.jpg" alt="Banking App" class="portfolio-img" width="360">
+
+              </picture>
               <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                 App · Exotic
                 Fruit Ecommerce App ·
@@ -301,8 +324,24 @@
               <p class="portfolio-card-desc">App</p>
             </div>
           </li>
+
           <li class="portfolio-card">
             <div class="thumb">
+              <picture>
+
+                <source media="(min-width: 1158px)" srcset="./images/img-porfolio/desk-2-min.jpg 1x, 
+                                ./images/img-porfolio/desk-2@2x-min.jpg 2x">
+
+                <source media="(min-width: 768px)" srcset="./images/img-porfolio/tab-2-min.jpg 1x, 
+                                ./images/img-porfolio/tab-2@2x-min.jpg 2x">
+
+                <source media="(max-width: 767px)" srcset="./images/img-porfolio/mob-2-min.jpg 1x, 
+                                ./images/img-porfolio/mob-2@2x-min.jpg 2x">
+
+                <img src="./images/img-porfolio/desk-2-min.jpg" alt="Banking App" class="portfolio-img" width="360">
+
+              </picture>
+
               <img src="./images/img-porfolio/cashless-payment.jpg" alt="Cashless Payment" class="portfolio-img"
                 width="360">
               <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -315,8 +354,25 @@
               <p class="portfolio-card-desc">Marketing</p>
             </div>
           </li>
+
           <li class="portfolio-card">
             <div class="thumb">
+
+              <picture>
+
+                <source media="(min-width: 1158px)" srcset="./images/img-porfolio/desk-3-min.jpg 1x, 
+                                ./images/img-porfolio/desk-3@2x-min.jpg 2x">
+
+                <source media="(min-width: 768px)" srcset="./images/img-porfolio/tab-3-min.jpg 1x, 
+                                ./images/img-porfolio/tab-3@2x-min.jpg 2x">
+
+                <source media="(max-width: 767px)" srcset="./images/img-porfolio/mob-3-min.jpg 1x, 
+                                ./images/img-porfolio/mob-3@2x-min.jpg 2x">
+
+                <img src="./images/img-porfolio/desk-3-min.jpg" alt="Banking App" class="portfolio-img" width="360">
+
+              </picture>
+
               <img src="./images/img-porfolio/meditation-app.jpg" alt="Meditation App" class="portfolio-img"
                 width="360">
               <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -329,9 +385,26 @@
               <p class="portfolio-card-desc">App</p>
             </div>
           </li>
+
           <!--second row-->
           <li class="portfolio-card">
             <div class="thumb">
+
+              <picture>
+
+                <source media="(min-width: 1158px)" srcset="./images/img-porfolio/desk-4-min.jpg 1x, 
+                                ./images/img-porfolio/desk-4@2x-min.jpg 2x">
+
+                <source media="(min-width: 768px)" srcset="./images/img-porfolio/tab-4-min.jpg 1x, 
+                                ./images/img-porfolio/tab-4@2x-min.jpg 2x">
+
+                <source media="(max-width: 767px)" srcset="./images/img-porfolio/mob-4-min.jpg 1x, 
+                                ./images/img-porfolio/mob-4@2x-min.jpg 2x">
+
+                <img src="./images/img-porfolio/desk-4-min.jpg" alt="Banking App" class="portfolio-img" width="360">
+
+              </picture>
+
               <img src="./images/img-porfolio/taxi-service.jpg" alt="Taxi Service" class="portfolio-img" width="360">
               <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
                 App · Exotic
@@ -343,8 +416,25 @@
               <p class="portfolio-card-desc">Marketing</p>
             </div>
           </li>
+
           <li class="portfolio-card">
             <div class="thumb">
+
+              <picture>
+
+                <source media="(min-width: 1158px)" srcset="./images/img-porfolio/desk-5-min.jpg 1x, 
+                                ./images/img-porfolio/desk-5@2x-min.jpg 2x">
+
+                <source media="(min-width: 768px)" srcset="./images/img-porfolio/tab-5-min.jpg 1x, 
+                                ./images/img-porfolio/tab-5@2x-min.jpg 2x">
+
+                <source media="(max-width: 767px)" srcset="./images/img-porfolio/mob-5-min.jpg 1x, 
+                                ./images/img-porfolio/mob-5@2x-min.jpg 2x">
+
+                <img src="./images/img-porfolio/desk-5-min.jpg" alt="Banking App" class="portfolio-img" width="360">
+
+              </picture>
+
               <img src="./images/img-porfolio/screen-illustrations.jpg" alt="Screen Illustrations" class="portfolio-img"
                 width="360">
               <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -357,8 +447,25 @@
               <p class="portfolio-card-desc">Design</p>
             </div>
           </li>
+
           <li class="portfolio-card">
             <div class="thumb">
+
+              <picture>
+
+                <source media="(min-width: 1158px)" srcset="./images/img-porfolio/desk-6-min.jpg 1x, 
+                                ./images/img-porfolio/desk-6@2x-min.jpg 2x">
+
+                <source media="(min-width: 768px)" srcset="./images/img-porfolio/tab-6-min.jpg 1x, 
+                                ./images/img-porfolio/tab-6@2x-min.jpg 2x">
+
+                <source media="(max-width: 767px)" srcset="./images/img-porfolio/mob-6-min.jpg 1x, 
+                                ./images/img-porfolio/mob-6@2x-min.jpg 2x">
+
+                <img src="./images/img-porfolio/desk-6-min.jpg" alt="Banking App" class="portfolio-img" width="360">
+
+              </picture>
+
               <img src="./images/img-porfolio/online-courses.jpg" alt="Online Courses" class="portfolio-img"
                 width="360">
               <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -371,6 +478,7 @@
               <p class="portfolio-card-desc">Marketing</p>
             </div>
           </li>
+
         </ul>
       </div>
     </section>
@@ -379,7 +487,7 @@
   </main>
 
   <!-- #region Footer  -->
-  <footer class="footer-section">
+  <footer class="footer-section  hidden">
     <div class="container">
       <div class="footer-logo-block">
         <!--logo-->
@@ -444,7 +552,8 @@
   <!-- #endregion -->
 
   <!-- #region Popup Modal Window -->
-  <div class="modal-overlay is-open">
+
+  <div class="modal-overlay is-open  hidden">
     <div class="modal">
       <button class="close-btn" type="button">
         <svg class="close-icon" width="8" height="8">
