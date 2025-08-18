@@ -48,11 +48,73 @@
           </li>
         </ul>
       </address>
-      <button class="burger-btn" type="button">
-        <svg class="burger-icon" width="24" height="24">
+      <button class="burger-btn" type="button" data-menu-open><svg class="burger-icon" width="24" height="24">
           <use href="./images/icons.svg#icon-burger"></use>
         </svg>
       </button>
+    </div>
+
+    <!-- Mobile MENU -->
+    <div class="mob-menu" data-menu>
+      <div class="container mob-menu-container">
+
+        <button class="mob-menu-close-btn" data-menu-close>
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mob-menu-nav">
+          <ul class="mob-nav-list">
+            <li><a href="./index.html" class="mob-nav-link current">Studio</a></li>
+            <li><a href="" class="mob-nav-link">Portfolio</a></li>
+            <li><a href="" class="mob-nav-link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <address class="mob-menu-address">
+          <ul class="header-adress-list">
+            <li>
+              <a href="tel:+110001111111" class="address-link">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+
+        <ul class="soc-icon-list">
+          <li class="soc-icon-item">
+            <a href="" class="icon">
+              <svg class="icon-soc" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-icon-item">
+            <a href="" class="icon">
+              <svg class="icon-soc" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-icon-item">
+            <a href="" class="icon">
+              <svg class="icon-soc" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-icon-item">
+            <a href="" class="icon">
+              <svg class="icon-soc" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+      </div>
     </div>
     <!-- </div> -->
   </header>
@@ -64,7 +126,7 @@
     <section class="section hero-section-block hidden">
       <div class="container">
         <h1 class="hero-section-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-btn">Order Service</button>
+        <button type="button" class="hero-btn" data-modal-open>Order Service</button>
       </div>
     </section>
     <!-- #endregion -->
@@ -553,9 +615,9 @@
 
   <!-- #region Popup Modal Window -->
 
-  <div class="modal-overlay is-open  hidden">
+  <div class="modal-overlay hidden" data-modal>
     <div class="modal">
-      <button class="close-btn" type="button">
+      <button class="close-btn" type="button" data-modal-close>
         <svg class="close-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -621,6 +683,8 @@
   </div>
 
   <!-- #endregion -->
+  <script src="./modal.js"></script>
+  <script src="./menu.js"></script>
 </body>
 
 </html>
