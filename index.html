@@ -123,7 +123,7 @@
 
   <main>
     <!-- #region Section 1 - Hero Page -->
-    <section class="section hero-section-block hidden">
+    <section class="section hero-section-block">
       <div class="container">
         <h1 class="hero-section-title">Effective Solutions for Your Business</h1>
         <button type="button" class="hero-btn" data-modal-open>Order Service</button>
@@ -668,13 +668,19 @@
         <div class="checkbox-field">
           <input class="checkbox-input visually-hidden" type="checkbox" name="user-privacy" id="user-privacy"
             value="true">
+
           <label class="checkbox-label" for="user-privacy">
             <span class="custom-checkbox">
               <svg class="custom-checkbox-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-checkbox"></use>
               </svg>
-            </span>I accept the terms and conditions of the
-            <a class="privacy-link" href="">Privacy Policy</a>
+            </span>
+            <div class="privacy-block">
+
+              I accept the terms and conditions of the
+              <a class="privacy-link" href="">Privacy Policy</a>
+
+            </div>
           </label>
         </div>
         <button class="send-btn" type="submit">Send</button>
